@@ -1,0 +1,139 @@
+.team {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0;
+  padding-top: 20vh;
+  position: relative;
+  width: 100vw;
+}
+
+.team h2 {
+  font-size: 2rem;
+}
+
+.team h3 {
+  font-size: 1.5rem;
+}
+
+.team p {
+  font-size: 1.5rem;
+}
+
+.team .deco-rect {
+  bottom: 0;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  z-index: -100;
+}
+
+.team .deco-rect img {
+  width: 100%;
+  height: 100%;
+  transform: translateY(30%) scale(2);
+}
+
+.team .team-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.team .team-content header {
+  padding: 4rem 18%;
+}
+
+.team-card {
+  background-color: transparent;
+  display: grid;
+  margin: auto;
+  gap: 2rem;
+  grid-column: span 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: fit-content;
+}
+
+.team-card .card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 24vw;
+  min-width: 360px;
+  max-width: 380px;
+  padding: 4rem 1rem 2.5rem 1rem;
+  text-align: center;
+  max-height: 360px;
+}
+
+.team-card .card h3 {
+  margin-top: 0.2rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.team-card .card > img {
+  border-radius: 50%;
+  height: 72px;
+  width: 72px;
+  margin-bottom: 1.5rem;
+}
+
+.team-card .card > img:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+.team-card .card p {
+  font-size: 1rem;
+  height: 4.8rem;
+}
+
+.team-card .card span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.team-card .card span a:hover img {
+  /* transform: scale(1.2);
+  transition: all 0.1s ease-in; */
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+.ic-socials {
+  height: 32px;
+  width: auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 960px) {
+  .team {
+    height: max-content;
+  }
+
+  .team .team-content header {
+    padding: 10% 6%;
+    text-align: center;
+  }
+
+  .team .team-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-card {
+    grid-column: span 1;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "heading": "Socials",
+            "list": [
+                {
+                    "title": "Twitter",
+                    "url": "https://twitter.com/"
+                },
+                {
+                    "title": "Linkedin",
+                    "url": "https://linkedin.com/"
+                },
+                {
+                    "title": "Github",
+                    "url": "https://github.com/"
+                },
+                {
+                    "title": "Instagram",
+                    "url": "https://instagram.com/"
+                }
+            ]
+        },
+        {
+            "heading": "Products",
+            "list": [
+                {
+                    "title": "Experiment Guide",
+                    "url": "/dashboard"
+                },
+                {
+                    "title": "Interactive Examples",
+                    "url": "/?run_sim=true"
+                },
+                {
+                    "title": "Discussion",
+                    "url": "/discussion"
+                }
+            ]
+        },
+        {
+            "heading": "Company",
+            "list": [
+                {
+                    "title": "Usage",
+                    "url": "/docs/usage"
+                },
+                {
+                    "title": "Community Guidelines",
+                    "url": "/docs/community-guidelines"
+                },
+                {
+                    "title": "Terms and Condition",
+                    "url": "/docs/terms-and-condition"
+                },
+                {
+                    "title": "Privacy Policy",
+                    "url": "/docs/privacy-policy"
+                }
+            ]
+        }
+    ]
+}

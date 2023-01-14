@@ -1,0 +1,43 @@
+.navbar {
+  padding-top: 4rem;
+  background-color: var(--col-pri);
+}
+
+.navbar ul {
+  height: auto;
+}
+
+.navbar ul li {
+  padding: 1rem;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+}
+
+.navbar ul a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar img {
+  height: auto;
+  width: 160px; /** should be 168 but that looks off idk why **/
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.navbar ul li:hover {
+  background-color: white;
+}
+
+.navbar ul a:hover li, .navbar ul li:hover svg {
+  color: black;
+}
+
