@@ -10,9 +10,10 @@ import socialSignUp from "../utils/auth/socialLogin.util";
 import signIn from "../utils/auth/signIn.util";
 
 import "../assets/css/Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate()
   const { track, page, identify } = useAnalytics();
 
   const emailRef = React.useRef(null);
@@ -31,6 +32,7 @@ const Login = () => {
           try {
             identify("user", { email: credentials.email });
           } catch (e) {}
+          return navigate("/navigate")
         })
         .catch((err) => {
           setError(err.message || "An unknown error occured");

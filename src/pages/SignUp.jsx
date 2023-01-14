@@ -32,10 +32,10 @@ const SignUp = () => {
       })
         .then((credentials) => {
           console.log("Successful");
-          return navigate("/");
           try {
             identify("user", { email: credentials.email });
           } catch (e) {}
+          return navigate("/dashboard");
         })
         .catch((err) => {
           setError(err.message || "An unknown error occured");
