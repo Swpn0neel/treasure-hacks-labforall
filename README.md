@@ -73,3 +73,5 @@ yarn dev
 ```
 
 - The website will be live at https://localhost:5173/
+- The website is deployed at https://labforall.vercel.app/
+- Previously we were using at https://lab4all.vercel.app/
